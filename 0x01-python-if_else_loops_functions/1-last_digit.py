@@ -8,8 +8,10 @@ else:
     last_digit = number % 10
 
 # abs-> To calculate absolute of a number
+# end-> allows to append conditionals in same line
+# Without the end it will be in diferent lines
 
-print("Last digit of {} is {}".format(number, last_digit))
+print("Last digit of {} is {}".format(number, last_digit), end=" ")
 
 if last_digit > 5:
     print("and is greater than 5")
