@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-last_digit = number % 10 * -1
+last_digit = abs(number) % 10 * -1
+#abs-> To calculate absolute of a number
 #put (* -1) or negative numbers wont show correct last digit
 
 if last_digit > 5:
