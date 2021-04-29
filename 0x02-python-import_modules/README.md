@@ -6,3 +6,5 @@
 | 3-infinite_add.py | Program that prints the result of the addition of all arguments |
 | 4-hidden_discovery.py | Program that prints all the names defined by the compiled module hidden_4.pyc |
 | 5-variable_load.py | Program that imports the variable a from the file variable_load_5.py and prints its value. |
+| 101-easy_print.py | Program that prints #pythoniscool, followed by a new line, in the standard output. |
+| easyprint.py | Where is the #pythoniscool which is import to the 101-easy_print.py |
