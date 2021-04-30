@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # Comments allows to execute it
+
+
 # import dis
 def magic_calculation(a, b):
     if a < b:
