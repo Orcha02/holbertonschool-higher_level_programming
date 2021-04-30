@@ -16,3 +16,4 @@
 | 13-insert_number.c | Function in C that inserts a number into a sorted singly linked list. |
 | lists.h | File contains headers for task 13 (C lang) |
 | 100-print_tebahpla.py | Program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase |
+| 102-magic_calculation.py |  Python function def magic_calculation(a, b, c) |
