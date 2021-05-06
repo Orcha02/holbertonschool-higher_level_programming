@@ -6,4 +6,4 @@ def square_matrix_simple(matrix=[]):
     return square_matrix
 # map() function executes a specified function for each item in an iterable
 #      -> will apply its lambda function to the elements of the argument lists
-# lambda function can take any number of arguments
+# (lambda argument : expression)->expression is executed and result is returned
