@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import dis
+# import dis
 """Defines a class MagicClass"""
 import math
 
@@ -20,4 +20,4 @@ class MagicClass:
     def circumference(self):
         """Calculates the circumference of the circle"""
         return 2 * math.pi * self.__radius
-dis.dis(MagicClass)
+# dis.dis(MagicClass)
