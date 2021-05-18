@@ -2,7 +2,7 @@
 # empty class Square that defines a square
 
 
-class Square: # init allow square class to be used
-    pass # Constructs a body that does nothing
+class Square:
+    pass
 
 # Cant have empty body so I used pass
