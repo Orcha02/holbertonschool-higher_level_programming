@@ -53,4 +53,6 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         string_result = ((self.__height) * ((self.__width * '#') + '\n'))
-        return string_result
+        return string_result[:-1]
+
+# [:-1]-> To erase extra \n after the output
