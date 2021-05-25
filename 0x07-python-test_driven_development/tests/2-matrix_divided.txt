@@ -1,0 +1,50 @@
+Tests ''2-matrix_divided.py''
+=============================
+Function ''matrix_divided'' that divides all elements of a matrix.
+------------------------------------------------------------------
+Import the function ''matrix_divider'' from ''2-matrix_divided.py'':
+
+       >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Tests to check if it works:
+
+      Matrix with integer numbers:
+      >>> matrix_divided([[4, 5, 6],[7, 8, 9]], 3)
+      [[1.33, 1.67, 2.0], [2.33, 2.67, 3.0]]
+
+      Matrix divided by a float:
+      >>> matrix_divided([[1, 2, 3],[4, 5, 6]], 2.7)
+      [[0.37, 0.74, 1.11], [1.48, 1.85, 2.22]]
+
+      Matrix divided by zero:
+      >>> matrix_divided([[1, 2, 3],[4, 5, 6]], 0)
+      Traceback (most recent call last):
+      ...
+      ZeroDivisionError: division by zero
+
+      Matrix divided by negative:
+      >>> matrix_divided([[1, 2, 3],[4, 5, 6]], -1)
+      [[-1.0, -2.0, -3.0], [-4.0, -5.0, -6.0]]
+
+      Matrix divided by string:
+      >>> matrix_divided([[1, 2, 3],[4, 5, 6]], "Hello World")
+      Traceback (most recent call last):
+      ...
+      TypeError: div must be a number
+
+      Each row of the matrix must be of the same size:
+      >>> matrix_divided([[1, 2, 3],[4, 5]], 3)
+      Traceback (most recent call last):
+      ...
+      TypeError: Each row of the matrix must have the same size
+
+      Matrix must be a list of lists of integers or floats:
+      >>> matrix_divided([["car", "house", 3],[4, 5]], 3)
+      Traceback (most recent call last):
+      ...
+      TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+      Check pep8:
+      >>> import os
+      >>> os.popen("pep8 2-matrix_divided.py").read()
+      ''

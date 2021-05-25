@@ -1,0 +1,34 @@
+Tests ''3-say_my_name.py''
+==========================
+Function ''say_my_name'' that prints My name is <first name> <last name>
+------------------------------------------------------------------------
+Import the function ''say_my_name'' from ''3-say_my_name'':
+
+       >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Tests to check if it works:
+
+      Two strings:
+      >>> say_my_name("Daniel", "Ortega")
+      My name is Daniel Ortega
+
+      Pass string and int:
+      >>> say_my_name("Daniel", 19)
+      Traceback (most recent call last):
+      ...
+      TypeError: last_name must be a string
+
+      Pass nothing:
+      >>> say_my_name("Daniel", 19)
+      Traceback (most recent call last):
+      ...
+      TypeError: last_name must be a string
+
+      Pass one argument:
+      >>> say_my_name("Daniel")
+      My name is Daniel 
+
+      Check pep8:
+      >>> import os
+      >>> os.popen("pep8 3-say_my_name.py").read()
+      ''

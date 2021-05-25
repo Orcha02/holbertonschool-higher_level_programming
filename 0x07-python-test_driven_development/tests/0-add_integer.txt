@@ -1,0 +1,49 @@
+Tests ''0-add_integer''
+=======================
+Function ''add_integer'' that adds 2 integers
+----------------------------------------------
+Import the function ''add_integer'' from ''0-add_integer'':
+
+       >>> add_integer = __import__('0-add_integer').add_integer
+
+
+Tests to check if it works:
+
+      Positive numbers:
+      >>> add_integer(5, 7)
+      12
+
+      Negative numbers:
+      >>> add_integer(-8, -6)
+      -14
+
+      Cast negative and positive into integers if they are float:
+      >>> add_integer(99.3, -5)
+      94
+
+      String in argument:
+      >>> add_integer("Hello", 2)
+      Traceback (most recent call last):
+      ...
+      TypeError: a must be an integer
+
+      Miss an argument:
+      >>> add_integer(25)
+      123
+
+      Missing both arguments
+      >>> add_integer()
+      Traceback (most recent call last):
+      ...
+      TypeError: add_integer() missing 1 required positional argument: 'a'
+
+      Check pep8:
+      >>> import os
+      >>> os.popen("pep8 0-add_integer.py").read()
+      ''
+
+      Overflow (infinite number):
+      >>> add_integer(float("inf"), 3)
+      Traceback (most recent call last):
+      ...
+      OverflowError: cannot convert float infinity to integer
