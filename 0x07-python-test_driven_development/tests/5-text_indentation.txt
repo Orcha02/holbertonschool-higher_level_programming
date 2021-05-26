@@ -24,3 +24,14 @@ Tests to check if it works:
       Traceback (most recent call last):
       ...
       TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+      String with tokens:
+      >>> text_indentation("Hello. world? python: fun.")
+      Hello.
+      <BLANKLINE>
+      world?
+      <BLANKLINE>
+      python:
+      <BLANKLINE>
+      fun.
+      <BLANKLINE>
