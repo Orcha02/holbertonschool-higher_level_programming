@@ -6,6 +6,8 @@ after each of these characters: ., ? and :.
 
 
 def text_indentation(text):
+""" Function that prints a text with 2 new lines """
+
     delimiters = ['?', '.', ':']
     is_space = False
 
