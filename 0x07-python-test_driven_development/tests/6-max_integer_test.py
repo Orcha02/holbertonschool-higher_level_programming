@@ -10,6 +10,7 @@ class TestMaxInt(unittest.TestCase):
     def test_max_integer(self):
         self.assertEqual(max_integer([1, 2, 3]), 3)
         self.assertEqual(max_integer([9]), 9)
+        self.assertEqual(max_integer([4, 6, 5]), 6)
 
     def test_no_params(self):
         self.assertIsNone(max_integer([]))
