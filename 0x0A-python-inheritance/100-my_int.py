@@ -11,5 +11,5 @@ class MyInt(int):
     def __eq__(self, other):
         return int.__ne__(self, other)
 
-# __ne__-> ==
-# __eq__-> !=
+# __ne__-> !=
+# __eq__-> ==
