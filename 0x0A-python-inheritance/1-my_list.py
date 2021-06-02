@@ -3,6 +3,7 @@
 
 
 class MyList(list):
+    """ Function for attributes """
     def print_sorted(self):
         print(sorted(self))
 
