@@ -34,6 +34,7 @@ ValueError: distance must be greater than 0
             ...
             ValueError: distance must be greater than 0
 
+	    Float numbers:
 	    >>> bg.integer_validator("float", 3.5)
             Traceback (most recent call last):
             ...
