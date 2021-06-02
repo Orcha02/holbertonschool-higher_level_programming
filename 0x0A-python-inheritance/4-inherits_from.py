@@ -6,6 +6,7 @@ or indirectly) from the specified class, otherwise return False.
 
 
 def inherits_from(obj, a_class):
+    """ Function for attributes """
     if issubclass(type(obj), a_class):
         return True
     return False

@@ -3,4 +3,5 @@
 
 
 class BaseGeometry:
+    """ Function for attributes """
     pass
