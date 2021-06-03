@@ -18,4 +18,4 @@ class Student:
         for attributes in attrs:
             if attributes in self.__dict__:
                 dict[attributes] = self.__dict__[attributes]
-            return dict
+        return dict
