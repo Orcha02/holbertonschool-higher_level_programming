@@ -14,7 +14,7 @@ class Rectangle(Base):
         self.y = y
 
     @property
-    def width(self, value):
+    def width(self):
         """ Getter of width """
         return self.__width
 
@@ -28,7 +28,7 @@ class Rectangle(Base):
         self.__width = value
 
     @property
-    def height(self, value):
+    def height(self):
         """ Getter of height """
         return self.__height
 
@@ -42,7 +42,7 @@ class Rectangle(Base):
         self.__height = value
 
     @property
-    def x(self, value):
+    def x(self):
         """ Getter of x """
         return self.__x
 
@@ -56,7 +56,7 @@ class Rectangle(Base):
         self.__x = value
 
     @property
-    def y(self, value):
+    def y(self):
         """ Getter of y """
         return self.__y
 
@@ -86,11 +86,11 @@ class Rectangle(Base):
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
            self.id, self.__x, self.__y, self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update class Rectangle by assigning an argument to each attribute"""
-        if args is not 0:
+        if args: # Checks if exists
             # Iterate list with index condition
-            # Index iterates in the enumerated list(args), the it's compared
+            # Index iterates in the enumerated list(args), then it's compared
             for index, element in enumerate(args):
                 if index == 0:
                     self.id = element
@@ -102,3 +102,10 @@ class Rectangle(Base):
                     self.__x = element
                 elif index == 4:
                     self.__y = element
+            # items-> Returns key-value pairs of dictionary, as tuples in a list
+        else:
+            for key, value in kwargs.items():
+                # hasattr->Returns True if object(.item) has the attributte(key)
+                if hasattr(self, key):
+                    # setattr->Set attribute(key) value of object(.item)
+                    setattr(self, key, value)
