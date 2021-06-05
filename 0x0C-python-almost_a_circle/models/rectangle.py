@@ -74,7 +74,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """Public method that prints in stdout the Rectangle with '#' (w * H)"""
+        """Public method prints in stdout the Rectangle with '#' (w * H)"""
         for i in range(self.__y):
             print()
         for i in range(self.__height):
@@ -83,5 +83,22 @@ class Rectangle(Base):
 
     def __str__(self):
         """Return string representation of class."""
-        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format
-        (self.id, self.__x, self.__y, self.__width, self.__height)
+        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
+           self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args):
+        """Update class Rectangle by assigning an argument to each attribute"""
+        if args is not 0:
+            # Iterate list with index condition
+            # Index iterates in the enumerated list(args), the it's compared
+            for index, element in enumerate(args):
+                if index == 0:
+                    self.id = element
+                elif index == 1:
+                    self.__width = element
+                elif index == 2:
+                    self.__height = element
+                elif index == 3:
+                    self.__x = element
+                elif index == 4:
+                    self.__y = element
