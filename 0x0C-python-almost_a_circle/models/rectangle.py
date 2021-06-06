@@ -88,7 +88,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Update class Rectangle by assigning an argument to each attribute"""
-        if args: # Checks if exists
+        if args:  # Checks if exists
             # Iterate list with index condition
             # Index iterates in the enumerated list(args), then it's compared
             for index, element in enumerate(args):
@@ -102,10 +102,10 @@ class Rectangle(Base):
                     self.__x = element
                 elif index == 4:
                     self.__y = element
-            # items-> Returns key-value pairs of dictionary, as tuples in a list
         else:
+            # items->Returns key-value pairs of dictionary, as tuples in a list
             for key, value in kwargs.items():
-                # hasattr->Returns True if object(.item) has the attributte(key)
+                # hasattr->Return True if object(.item) has the attributte(key)
                 if hasattr(self, key):
                     # setattr->Set attribute(key) value of object(.item)
                     setattr(self, key, value)
