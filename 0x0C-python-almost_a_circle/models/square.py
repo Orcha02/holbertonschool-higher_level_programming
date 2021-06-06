@@ -27,3 +27,25 @@ class Square(Rectangle):
         """ Setter of size"""
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """Update class Square by assigning attributes"""
+        if args:  # Checks if exists
+            # Iterate list with index condition
+            # Index iterates in the enumerated list(args), then it's compared
+            for index, element in enumerate(args):
+                if index == 0:
+                    self.id = element
+                elif index == 1:
+                    self.size = element
+                elif index == 2:
+                    self.x = element
+                elif index == 3:
+                    self.y = element
+        else:
+            # items->Returns key-value pairs of dictionary, as tuples in a list
+            for key, value in kwargs.items():
+                # hasattr->Return True if object(.item) has the attributte(key)
+                if hasattr(self, key):
+                    # setattr->Set attribute(key) value of object(.item)
+                    setattr(self, key, value)
