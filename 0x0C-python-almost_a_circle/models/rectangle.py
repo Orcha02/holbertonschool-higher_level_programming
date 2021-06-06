@@ -111,6 +111,7 @@ class Rectangle(Base):
                     setattr(self, key, value)
 
     def to_dictionary(self):
-        dict_repr = {'id' : self.id, 'width' : self.width,
-                     'height' : self.height, 'x' : self.x, 'y' : self.y}
+        """ Returns the dictionary representation of a Rectangle"""
+        dict_repr = {'id': self.id, 'width': self.width,
+                     'height': self.height, 'x': self.x, 'y': self.y}
         return dict_repr
