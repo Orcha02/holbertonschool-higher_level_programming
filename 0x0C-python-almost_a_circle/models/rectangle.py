@@ -109,3 +109,8 @@ class Rectangle(Base):
                 if hasattr(self, key):
                     # setattr->Set attribute(key) value of object(.item)
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        dict_repr = {'id' : self.id, 'width' : self.width,
+                     'height' : self.height, 'x' : self.x, 'y' : self.y}
+        return dict_repr
