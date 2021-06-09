@@ -51,3 +51,17 @@ class Base:
             dummy = cls(1, 1)
             dummy.update(**dictionary)
             return dummy
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Returns an instance with all attributes already set"""
+
+        if cls.__name__ == "Square":
+            dummy = cls(2)
+            dummy.update(**dictionary)
+            return dummy
+
+        if cls.__name__ == "Rectangle":
+            dummy = cls(2, 4)
+            dummy.update(**dictionary)
+            return dummy
