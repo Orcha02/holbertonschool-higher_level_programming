@@ -80,4 +80,4 @@ class Base:
                 instances_list.append(cls.create(**obj))
             return instances_list
         except FileNotFoundError:
-            pass
+            return []
