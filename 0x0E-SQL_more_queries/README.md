@@ -17,3 +17,5 @@
 | 14-my_genres.sql | Script that uses the hbtn_0d_tvshows database to lists all genres of the show Dexter. |
 | 15-comedy_only.sql | Script that lists all Comedy shows in the database hbtn_0d_tvshows. |
 | 16-shows_by_genre.sql | Script that lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows. |
+| 100-not_my_genres.sql | Script that uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter |
+| 101-not_a_comedy.sql | Script that lists all shows without the genre Comedy in the database hbtn_0d_tvshows |
