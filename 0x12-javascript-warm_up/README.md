@@ -1,3 +1,4 @@
+## Check JS scripts with: `sudo npm install semistandard --global`
 | FILES  | DESCRIPTION |
 | ------------- | ------------- |
 | 0-javascript_is_amazing.js | Script that prints “JavaScript is amazing” |
