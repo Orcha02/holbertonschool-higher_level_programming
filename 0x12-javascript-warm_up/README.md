@@ -1,7 +1,8 @@
 ## Check JS scripts with: `sudo npm install semistandard --global`
-## Autocheck semistandard `watch make -f makefile`
+## Autocheck semistandard with: `watch make -f makefile`
 | FILES  | DESCRIPTION |
 | ------------- | ------------- |
+| makefile | Makefile that fixes JS scripts with semistandard --fix |
 | 0-javascript_is_amazing.js | Script that prints “JavaScript is amazing” |
 | 1-multi_languages.js | Script that prints 3 lines. First line: “C is fun”, Second line: “Python is cool”, Third line: “JavaScript is amazing” |
 | 2-arguments.js | Script that prints a message depending of the number of arguments passed |
@@ -16,3 +17,6 @@
 | 11-second_biggest.js | Script that searches the second biggest integer in the list of arguments |
 | 12-object.js | Script to replace the value 12 with 89 |
 | 13-add.js | Function that returns the addition of 2 integers |
+| 100-let_me_const.js | File that modifies the value of myVar to 333 |
+| 101-call_me_moby.js | Function that executes x times a function |
+| 102-add_me_maybe.js | Function that increments and calls a function |
