@@ -1,5 +1,5 @@
 ## Check JS scripts with: `sudo npm install semistandard --global`
-## Autocheck semistandard with: `watch make -f makefile`
+## Autocheck and fix semistandard with: `watch make -f makefile`
 | FILES  | DESCRIPTION |
 | ------------- | ------------- |
 | makefile | Makefile that fixes JS scripts with semistandard --fix |
