@@ -1,4 +1,5 @@
 ## Check JS scripts with: `sudo npm install semistandard --global`
+## Autocheck semistandard `watch make -f makefile`
 | FILES  | DESCRIPTION |
 | ------------- | ------------- |
 | 0-javascript_is_amazing.js | Script that prints “JavaScript is amazing” |
