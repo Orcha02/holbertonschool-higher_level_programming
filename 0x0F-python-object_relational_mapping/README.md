@@ -15,4 +15,7 @@
 | 12-model_state_update_id_2.py | Script that changes the name of a State object from the database hbtn_0e_6_usa |
 | 13-model_state_delete_a.py | Script that deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa |
 | 14-model_city_fetch_by_state.py | Script that prints all City objects from the database hbtn_0e_14_usa |
+
+---
+
 ![ORM](https://i.imgur.com/ZYYwbDP.png)
