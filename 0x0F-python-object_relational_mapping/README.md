@@ -18,4 +18,6 @@
 
 ---
 
-![ORM](https://i.imgur.com/ZYYwbDP.png)
+<p align="center">
+  <img width="1000" height="500" src="https://i.imgur.com/ZYYwbDP.png">
+</p>
