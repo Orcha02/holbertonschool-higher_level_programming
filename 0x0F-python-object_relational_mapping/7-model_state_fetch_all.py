@@ -23,6 +23,7 @@ if __name__ == "__main__":
 
     for state_instance in my_states:
         print("{}: {}".format(state_instance.id, state_instance.name))
+    session.close()
 
 # create_engine-> Produces an Engine object based on a URL
 # pool_pre_ping=True-> Checks if the connection is still alive
@@ -32,3 +33,5 @@ if __name__ == "__main__":
 # create_all-> To issue CREATE on the MetaData object. Will first check for the
 #              existence of each table, and if not found will CREATE them
 # sessionmaker-> Session object to handle database
+# session.close-> Goes back to original state when it was first constructed so
+#                 it can be used again (Like a 'reset' to the clean state)
