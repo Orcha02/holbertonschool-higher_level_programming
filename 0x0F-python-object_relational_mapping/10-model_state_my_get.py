@@ -20,6 +20,6 @@ if __name__ == '__main__':
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    my_state = session.query(State).filter(State.name == state_result).firste()
+    my_state = session.query(State).filter(State.name == state_result).first()
 
     print(my_state.id if result_state else "Not found")  # Python ternary
