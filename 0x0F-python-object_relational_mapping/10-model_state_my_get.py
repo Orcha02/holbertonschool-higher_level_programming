@@ -22,4 +22,4 @@ if __name__ == '__main__':
     session = Session()
     my_state = session.query(State).filter(State.name == state_result).first()
 
-    print(my_state.id if result_state else "Not found")  # Python ternary
+    print(my_state.id if my_state else "Not found")  # Python ternary
