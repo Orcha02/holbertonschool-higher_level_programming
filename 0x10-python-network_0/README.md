@@ -1,3 +1,11 @@
+## Download holbertonschool image into docker from: `https://hub.docker.com/u/holbertonschool`
+## Image: `holbertonschool/299`
+## 1st: `sudo docker pull docker pull <image>`
+## 2nd: `sudo docker run docker pull <image>`
+## 3rd: `sudo docker ps`
+## 4th: `sudo docker exec -it <id> sh`
+## 5th: `curl -sI <IP:PORT>`
+
 |  FILES  |  DESCRIPTION  |
 | ------------- | ------------- |
 | 0-body_size.sh | Bash script that takes in a URL, sends a request to that URL, and displays the size of the body of the response |

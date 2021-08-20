@@ -1,3 +1,11 @@
+## Download holbertonschool image into docker from: `https://hub.docker.com/u/holbertonschool`
+## Image: `holbertonschool/300`
+## 1st: `sudo docker pull docker pull <image>`
+## 2nd: `sudo docker run docker pull <image>`
+## 3rd: `sudo docker ps`
+## 4th: `sudo docker exec -it <id> sh`
+## 5th: `curl -sI <IP:PORT>`
+
 |  FILES  |  DESCRIPTION  |
 | ------------- | ------------- |
 | 0-hbtn_status.py | Python script that fetches https://intranet.hbtn.io/status |
