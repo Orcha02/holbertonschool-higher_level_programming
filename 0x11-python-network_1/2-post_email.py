@@ -8,7 +8,7 @@ import urllib.parse
 from sys import argv
 
 if __name__ == "__main__":
-    url = argv[1]0
+    url = argv[1]
     values = {'email': argv[2]}
     data = urllib.parse.urlencode(values)
     data = data.encode('utf-8')  # POST data should be bytes
