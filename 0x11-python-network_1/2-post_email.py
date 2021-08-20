@@ -3,7 +3,8 @@
 Script takes URL and an email, sends a POST request to the passed URL
 with the email as a parameter, and displays the body of the response
 """
-from urllib import request, parse
+import urllib.request
+import urllib.parse
 from sys import argv
 
 if __name__ == "__main__":
