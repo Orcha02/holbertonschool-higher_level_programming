@@ -1,3 +1,7 @@
+## Import JQuery:
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
 | FILES  | DESCRIPTION |
 | ------------- | ------------- |
 | 0-script.js | JavaScript script that updates the text color of the <header> element to red (#FF0000) [use document.querySelector to select the HTML tag] |
