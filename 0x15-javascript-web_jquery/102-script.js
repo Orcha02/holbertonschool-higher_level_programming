@@ -4,7 +4,7 @@ $(document).ready(() => {
       url: 'https://www.fourtonfish.com/hellosalut/',
       type: 'GET',
       data: { lang: $('#language_code').val() },
-      success:(translate) => {
+      success: (translate) => {
         $('#hello').html(translate.hello);
       }
     });
