@@ -1,3 +1,15 @@
+## Install Node 10:
+`curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`
+`sudo apt-get install -y nodejs`
+## Install semi-standard:
+`sudo npm install semistandard --global`
+## Check JS scripts with:
+`sudo npm install semistandard --global`
+## Autocheck and fix semistandard with:
+`watch make -f makefile`
+## Install `request` module and use it
+`sudo npm install request --global`
+`sudo npm install request --global`
 | FILES  | DESCRIPTION |
 | ------------- | ------------- |
 | 0-readme.js | Script that reads and prints the content of a file. |
