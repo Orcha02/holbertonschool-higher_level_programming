@@ -9,7 +9,7 @@
 `watch make -f makefile`
 ## Install `request` module and use it
 `sudo npm install request --global`
-`sudo npm install request --global`
+`export NODE_PATH=/usr/lib/node_modules`
 | FILES  | DESCRIPTION |
 | ------------- | ------------- |
 | 0-readme.js | Script that reads and prints the content of a file. |
